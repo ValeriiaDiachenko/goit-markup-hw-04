@@ -116,6 +116,10 @@ img {
   list-style: none;
   padding: 0;
 }
+.header-contact-item:hover,
+.header-contact-item:focus {
+  fill: var(--accent-color);
+}
 
 .link {
   text-decoration: none;
@@ -131,6 +135,11 @@ img {
   padding-bottom: 200px;
   padding-top: 200px;
   text-align: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/hero-bg-img.jpg);
 }
 .hero-title {
   font-weight: 900;
@@ -213,6 +222,12 @@ img {
 .activities-types-item {
   width: 270px;
 }
+.activities-icon-place {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
 
 /*---------Section Our Team--------------------------------------*/
 .team-section {
@@ -241,6 +256,9 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
 .team-name {
@@ -261,10 +279,59 @@ img {
 }
 
 .members-text {
-  padding-bottom: 30px;
   padding-top: 30px;
 }
 
+.members-social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.members-social-item {
+  width: 44px;
+  height: 44px;
+}
+.members-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.members-social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+}
+.members-social-link:hover,
+.members-social-link:focus {
+  background-color: var(--accent-color);
+}
+.members-social-icon {
+  fill: #afb1b8;
+}
+.members-social-icon:focus,
+.members-social-icon:hover {
+  fill: #ffffff;
+}
+
+/*---------Clients section--------*/
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+
+  color: var(--title-color);
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
 /*---------------------------------------Footer-----------------*/
 .footer {
   background-color: #2f303a;
@@ -298,12 +365,32 @@ img {
   color: #ffffff;
   margin-bottom: 20px;
 }
+.footer-container {
+  display: flex;
+}
+.logo-adress {
+  display: flex;
+}
+.footer-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
 
 .logo-footer {
   margin-bottom: 20px;
 }
 .footer-list:not(:last-child) {
   margin-bottom: 9px;
+}
+.footer-social-link {
+  margin-left: 70px;
 }
 /*----------------------------PORTFOLIO Section Buttons----------------------------------------------*/
 .portfolio-button {
@@ -325,6 +412,8 @@ img {
 .portfolio-button:hover,
 .portfolio-button:focus {
   background-color: var(--accent-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .btn-list {
@@ -343,6 +432,10 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-top: 30px;
   margin-left: 30px;
+}
+.list-box:hover {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .projects-title {
   font-weight: 700;
