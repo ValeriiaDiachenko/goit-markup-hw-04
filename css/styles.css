@@ -51,7 +51,6 @@ img {
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
-
   border-bottom-color: #ececec;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -127,6 +126,9 @@ img {
 .contact-list:hover,
 .contact-list:focus {
   fill: var(--accent-color);
+}
+.contact-icon {
+  margin-right: 10px;
 }
 /*--------------HERO----------------------------*/
 .hero-section {
@@ -318,7 +320,7 @@ img {
   fill: #ffffff;
 }
 
-/*---------Clients section--------*/
+/*---------------------------Clients section---------------------------*/
 
 .clients-title {
   font-weight: 700;
@@ -339,6 +341,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: #afb1b8;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
